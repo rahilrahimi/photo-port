@@ -1,7 +1,8 @@
+// __tests__/PhotoList.test.js
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import PhotoList from '../'
+import PhotoList from './PhotoList'
 
 afterEach(cleanup)
 
@@ -15,13 +16,3 @@ describe('PhotoList is rendering', () => {
     expect(asFragment()).toMatchSnapshot()
   });
 });
-
-// exports[`PhotoList component renders 1`] = `
-// <DocumentFragment>
-//   <div>
-//     <div
-//       class="flex-row"
-//     />
-//   </div>
-// </DocumentFragment>
-// `;
